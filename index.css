@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 0px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#user {
+    background-color: white;
+    color: black;
+    border-radius: 18px;
+    padding: 5px;
+
+}
+
+#user img {
+    width: 15px;
+    height: 15px;
+
+
+
+}
+
+#a {
+    display: flex;
+   
+}
+
+.sidebar {
+    width: 13%;
+    background-color: rgb(20, 20, 20);
+    height: 230vh;
+    display: flex;
+
+    justify-content: space-between;
+
+    color: white;
+
+
+
+}
+
+.sidebar ul {
+    width: 100%;
+}
+
+.sidemenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidemenu p {
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar li {
+    list-style-type: none;
+    height: auto;
+    margin: 2px auto;
+
+    padding: 20px;
+    background-color: rgb(44, 43, 43);
+    text-align: justify;
+}
+
+
+
+.dropdown1,
+.dropdown2,
+.dropdown3 {
+
+    padding: 20px;
+    display: none;
+
+
+}
+
+
+
+
+
+
+.newitem {
+    height: 35px;
+    width: 100%;
+    border-radius: 6px;
+    text-align: left;
+    padding: 7px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+
+}
+
+.main {
+    width: 87%;
+    height: 100vh;
+}
+
+.heading {
+
+    font-size: 40px;
+    width: 90%;
+    margin: 10px auto;
+
+}
+
+#username {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: 40px;
+    margin-top: 10px;
+
+}
+
+#errorbox {
+    border: 2px solid red;
+    width: 87%;
+    margin: 20px auto;
+    height: 25px;
+    background-color: rgb(242, 209, 209);
+    color: rgb(121, 34, 34);
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+
+
+
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #d1cfcf;
+}
+
+tr:nth-child(even) {
+    background-color: #ececec;
+}
+
+button.edit {
+
+    padding: 5px 10px;
+    margin-right: 20px;
+    background-color: #377cf2;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    border: none;
+    border-radius: 3px;
+
+}
+
+button.delete {
+    background-color: #dd8730;
+    width: auto;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items:center;
+        height: auto;
+    }
+
+    header span {
+        margin-bottom: 10px;
+    }
+    #a{
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    #username {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #username img {
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    #errorbox {
+        width: 100%;
+        margin: 20px 0;
+        height: auto;
+    }
+
+    table {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    header {
+        font-size: 18px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    #username img {
+        height: 80px;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+    }
+}
